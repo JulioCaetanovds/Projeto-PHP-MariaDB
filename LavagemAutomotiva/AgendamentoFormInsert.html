@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Agendar Serviço</title>
+</head>
+<body>
+    <h2>Agendar Serviço</h2>
+
+    <form name="AgendaServico" method="POST" action="insert.php">
+        <input type="hidden" name="tabela" value="agenda">
+
+        <label>
+            <strong>Código da Lavagem:</strong><br>
+            <input type="text" name="input_cod_lavagem" placeholder="Preencha com o código da lavagem" required><br>
+        </label>
+        <label>
+            <strong>Placa do Veículo:</strong><br>
+            <input type="text" name="input_placa" placeholder="Preencha com a placa do veículo" required><br>
+        </label>
+        <label>
+            <strong>Data do Agendamento (Formato: dd/mm/yyyy):</strong><br>
+            <input type="text" name="input_data" placeholder="Preencha com a data do agendamento" required><br>
+        </label>
+
+        <input type="submit" value="Agendar"/>
+    </form>
+</body>
+</html>

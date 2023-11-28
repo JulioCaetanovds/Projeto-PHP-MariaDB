@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Cadastro de Veículo</title>
+</head>
+<body>
+    <h2>Cadastro de Veículos</h2>
+
+    <form name="CadVeiculo" method="POST" action="insert.php">
+        <input type="hidden" name="tabela" value="veiculo">
+
+        <label>
+            <strong>Placa:</strong><br>
+            <input type="text" name="input_placa" placeholder="Preencha com a placa" required><br>
+        </label>
+        <label>
+            <strong>Cor:</strong><br>
+            <input type="text" name="input_cor" placeholder="Preencha com a cor" required><br>
+        </label>
+        <label>
+            <strong>Modelo:</strong><br>
+            <input type="text" name="input_modelo" placeholder="Preencha com o modelo" required><br>
+        </label>
+        <label>
+            <strong>Tipo:</strong><br>
+            <input type="text" name="input_tipo" placeholder="Preencha com o tipo" required><br>
+        </label>
+        <label>
+            <strong>CPF do Cliente:</strong><br>
+            <input type="text" name="input_cpf_cliente" placeholder="Preencha com o CPF do cliente" required><br>
+        </label>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
